@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aCg-rW-TKf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--个人中心-->
+        <scene sceneID="5DQ-VI-K4p">
+            <objects>
+                <viewController id="Zlj-RN-Vav" customClass="ProfileViewController" customModule="Coder_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xcZ-sG-Gsy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rz-tm-mUq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="itW-ld-Zkc">
+                                        <rect key="frame" x="19" y="24" width="376" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teaPro_03" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-tb-FSE">
+                                                <rect key="frame" x="18" y="10" width="103" height="106"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="方晓明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qc-LG-uQu">
+                                                <rect key="frame" x="138" y="35" width="62" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女     小学二年级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPK-fN-HIj">
+                                                <rect key="frame" x="138" y="67" width="126" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileArrow" translatesAutoresizingMaskIntoConstraints="NO" id="uAG-lW-l4B">
+                                                <rect key="frame" x="321" y="50" width="44" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="becomeTea" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-IT-pRx">
+                                        <rect key="frame" x="19" y="174" width="376" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paintbrush.pointed.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kWO-Gi-FxN">
+                                        <rect key="frame" x="155" y="483" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9Hf-yL-YG8"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Hfm-ar-8yC"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4F1-dp-u0i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0rz-tm-mUq" firstAttribute="leading" secondItem="4F1-dp-u0i" secondAttribute="leading" id="PfM-bK-QA8"/>
+                            <constraint firstItem="0rz-tm-mUq" firstAttribute="trailing" secondItem="4F1-dp-u0i" secondAttribute="trailing" id="Pqf-aW-IuD"/>
+                            <constraint firstItem="4F1-dp-u0i" firstAttribute="bottom" secondItem="0rz-tm-mUq" secondAttribute="bottom" constant="-34" id="Ski-dS-fmg"/>
+                            <constraint firstItem="0rz-tm-mUq" firstAttribute="top" secondItem="4F1-dp-u0i" secondAttribute="top" id="bPN-fc-8t1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="个人中心" id="cGV-jn-fzW"/>
+                    <connections>
+                        <outlet property="becomeTeaView" destination="Sei-IT-pRx" id="QIo-Up-jil"/>
+                        <outlet property="scrollTable" destination="0rz-tm-mUq" id="11I-TQ-EcA"/>
+                        <outlet property="userInfoView" destination="itW-ld-Zkc" id="qi2-N4-pgz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xk7-ej-Xo7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.97101449275374" y="1994.8660714285713"/>
+        </scene>
+        <!--个人中心-->
+        <scene sceneID="Y1k-Ra-sRI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCg-rW-TKf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人中心" image="profile" id="P1W-UF-2K2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RJb-Ko-vch">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zlj-RN-Vav" kind="relationship" relationship="rootViewController" id="pSW-k1-iOT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9k-c9-qlq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="1995"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="becomeTea" width="900" height="383"/>
+        <image name="paintbrush.pointed.fill" catalog="system" width="128" height="119"/>
+        <image name="profile" width="25" height="25"/>
+        <image name="profileArrow" width="128" height="128"/>
+        <image name="teaPro_03" width="300" height="303"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

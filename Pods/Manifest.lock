@@ -1,0 +1,20 @@
+PODS:
+  - AlipaySDK-iOS (15.7.9)
+  - PagingMenuController (2.2.0)
+
+DEPENDENCIES:
+  - AlipaySDK-iOS
+  - PagingMenuController
+
+SPEC REPOS:
+  trunk:
+    - AlipaySDK-iOS
+    - PagingMenuController
+
+SPEC CHECKSUMS:
+  AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+
+PODFILE CHECKSUM: 64c6645f0101bda31f842e31e5c902e825679c0e
+
+COCOAPODS: 1.10.1

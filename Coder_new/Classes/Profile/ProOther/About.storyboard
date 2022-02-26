@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="vYn-OY-Rn6">
+            <objects>
+                <viewController storyboardIdentifier="About" id="0L7-uI-0Cw" customClass="AboutViewController" customModule="Coder_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fv5-kk-aVU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于软件" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byJ-ek-sgQ">
+                                <rect key="frame" x="158" y="26" width="90" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vG-VN-W8H">
+                                <rect key="frame" x="10" y="28" width="62" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="返回" image="chevron.down" catalog="system"/>
+                                <connections>
+                                    <segue destination="vyh-y5-SS6" kind="unwind" unwindAction="unwindSegueWithSender:" id="oSz-38-3jI"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1B-Nt-HR7">
+                                <rect key="frame" x="0.0" y="77" width="414" height="760"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qw-hG-jlW">
+                                        <rect key="frame" x="25" y="190" width="365" height="752"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">       Coder小小程序猿是一款帮助孩子们学习编程的软件。不知从什么时候起，互联网特别是移动互联网已经完全融入了我们的生活，从支付、 打车到外卖、坐公交，我们的生活早已离不开互联网。与此同时，越来越多的人意识到， “互联网+”已经成为了一种不可逆转的潮流，未来无论是什么行业的人，计算机相关 的技能一定是必不可少的，许多家长也因此迫切的想让自己的孩子学习少儿编程，希望 自己的孩子早点接触计算机相关的事物。然而，目前的绝大部分少儿编程教育都存在非 常大的局限性，比如，许多城市并没有少儿编程的线下教育班，而线上的一对一辅导则 效果欠佳，而且价格昂贵，许多家长迫切的希望能有一个价格合理、方便、有效的给自 己的孩子辅导少儿编程的渠道。不知从什么时候起，互联网特别是移动互联网已经完全融入了我们的生活，从支付、 打车到外卖、坐公交，我们的生活早已离不开互联网。与此同时，越来越多的人意识到， “互联网+”已经成为了一种不可逆转的潮流，未来无论是什么行业的人，计算机相关 的技能一定是必不可少的，许多家长也因此迫切的想让自己的孩子学习少儿编程，希望 自己的孩子早点接触计算机相关的事物。然而，目前的绝大部分少儿编程教育都存在非 常大的局限性，比如，许多城市并没有少儿编程的线下教育班，而线上的一对一辅导则 效果欠佳，而且价格昂贵，许多家长迫切的希望能有一个价格合理、方便、有效的给自 己的孩子辅导少儿编程的渠道。不知从什么时候起，互联网特别是移动互联网已经完全融入了我们的生活，从支付、 打车到外卖、坐公交，我们的生活早已离不开互联网。与此同时，越来越多的人意识到， “互联网+”已经成为了一种不可逆转的潮流，未来无论是什么行业的人，计算机相关 的技能一定是必不可少的，许多家长也因此迫切的想让自己的孩子学习少儿编程，希望 自己的孩子早点接触计算机相关的事物。然而，目前的绝大部分少儿编程教育都存在非 常大的局限性，比如，许多城市并没有少儿编程的线下教育班，而线上的一对一辅导则 效果欠佳，而且价格昂贵，许多家长迫切的希望能有一个价格合理、方便、有效的给自 己的孩子辅导少儿编程的渠道。</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="tNP-WK-DaV">
+                                        <rect key="frame" x="25" y="14" width="365" height="147"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="32R-h0-clP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Cvx-2I-7V7"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lZQ-vw-9ul"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <connections>
+                        <outlet property="AboutLabel" destination="8qw-hG-jlW" id="8GC-1J-g7z"/>
+                        <outlet property="AboutScrollView" destination="o1B-Nt-HR7" id="CFd-re-SFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aA-ht-5K3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vyh-y5-SS6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about" width="427" height="171"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

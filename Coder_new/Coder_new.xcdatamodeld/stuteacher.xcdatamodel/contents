@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Interlocution" representedClassName="Interlocution" syncable="YES" codeGenerationType="class">
+        <attribute name="timeOfLastLetter" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="letter" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Letter" inverseName="interlocution" inverseEntity="Letter"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="interlocution" inverseEntity="Teacher"/>
+    </entity>
+    <entity name="Intro" representedClassName="Intro" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="no" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="intro" inverseEntity="Teacher"/>
+    </entity>
+    <entity name="Letter" representedClassName="Letter" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="isUsers" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="letterTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="interlocution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Interlocution" inverseName="letter" inverseEntity="Interlocution"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="order" inverseEntity="Teacher"/>
+    </entity>
+    <entity name="Teacher" representedClassName="Teacher" syncable="YES" codeGenerationType="class">
+        <attribute name="degree" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="imageScroll" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="major" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="old" optional="YES" attributeType="String"/>
+        <attribute name="praScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="school" optional="YES" attributeType="String"/>
+        <attribute name="synScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="teaOld" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="interlocution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Interlocution" inverseName="teacher" inverseEntity="Interlocution"/>
+        <relationship name="intro" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Intro" inverseName="teacher" inverseEntity="Intro"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="teacher" inverseEntity="Order"/>
+    </entity>
+    <elements>
+        <element name="Interlocution" positionX="18.64544677734375" positionY="304.9886169433594" width="128" height="88"/>
+        <element name="Intro" positionX="-12.31689453125006" positionY="71.29678344726562" width="128" height="103"/>
+        <element name="Letter" positionX="247.7776489257812" positionY="286.3078308105469" width="128" height="89"/>
+        <element name="Teacher" positionX="-175.5835571289062" positionY="105.679443359375" width="128" height="269"/>
+        <element name="Order" positionX="27" positionY="216" width="128" height="89"/>
+    </elements>
+</model>

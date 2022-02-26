@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BEx-wv-JvG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--所有家教-->
+        <scene sceneID="ymK-GT-wlF">
+            <objects>
+                <viewController storyboardIdentifier="allTeacher" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cao-jP-XaG" customClass="TeacherViewController" customModule="Coder_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4a-1c-hKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O3e-QG-Vzw">
+                                <rect key="frame" x="0.0" y="132" width="414" height="764"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OaE-Yw-WWy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hho-ip-rWj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O3e-QG-Vzw" firstAttribute="leading" secondItem="hho-ip-rWj" secondAttribute="leading" id="7Do-Kh-JMc"/>
+                            <constraint firstAttribute="bottom" secondItem="O3e-QG-Vzw" secondAttribute="bottom" id="c9J-tI-rLu"/>
+                            <constraint firstItem="O3e-QG-Vzw" firstAttribute="top" secondItem="hho-ip-rWj" secondAttribute="top" constant="44" id="foq-DO-4AZ"/>
+                            <constraint firstItem="O3e-QG-Vzw" firstAttribute="trailing" secondItem="hho-ip-rWj" secondAttribute="trailing" id="ut9-Hn-sGL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="所有家教" id="P85-hr-h0y"/>
+                    <connections>
+                        <segue destination="gI9-d3-yoL" kind="showDetail" identifier="showTeacherDetail" id="NnD-MD-Ca7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64n-Al-v37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.97101449275374" y="-7.3660714285714279"/>
+        </scene>
+        <!--TeacherDetail-->
+        <scene sceneID="iJy-El-7u9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TeacherDetail" id="gI9-d3-yoL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3g-Nr-xYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="-355"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G5P-UX-ZJl">
+            <objects>
+                <viewController id="wlE-1j-Lc9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdD-7H-a9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tUN-jR-Ccm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pma-Na-ov9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="84"/>
+        </scene>
+        <!--家教-->
+        <scene sceneID="0vY-7D-CEL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BEx-wv-JvG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="家教" image="teacher" id="3ur-JJ-3e3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="25j-UD-pSL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cao-jP-XaG" kind="relationship" relationship="rootViewController" id="6l5-57-h7v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5n-70-5aB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="teacher" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
