@@ -6,7 +6,7 @@
 
 **This is a demo program to help parents find inexpensive programming teachers among university students group for their children.** The backdrop is that nowadays more and more parents in China want their children to learn programming from an early age, but do not have the financial resources to pay for a tutor. Overall, it's like a takeaway app, but instead of food takeaway, it's teacher "takeaway". 
 
-Sorry for the app is in Chinese. Luckly, I wrote a document to demonstrate each part of the app, see [[Project Document - Little Programmer](https://docs.google.com/document/d/14jBTFj4QHoKuKyTRamkEjg2ZwZ7OXrmqpzKFPS0lhdE/edit?usp=sharing)]. 
+Sorry for the app is in Chinese. Luckily, I wrote a document to demonstrate each part of the app, see [[Project Document - Little Programmer](https://docs.google.com/document/d/14jBTFj4QHoKuKyTRamkEjg2ZwZ7OXrmqpzKFPS0lhdE/edit?usp=sharing)]. 
 
 ## Demo Gif
 
